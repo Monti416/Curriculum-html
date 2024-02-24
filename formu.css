@@ -1,0 +1,56 @@
+.formu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+#formulario-container {
+	border: 2px solid #ccc;
+	padding: 20px;
+	border-radius: 10px;
+	width: 350px; 
+	text-align: center;
+	background-color: #d9fadc; 
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+input, textarea {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 12px;
+	box-sizing: border-box;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button#limpiar { 
+	background-color: #e74c3c; 
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+button, .boton-volver {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}

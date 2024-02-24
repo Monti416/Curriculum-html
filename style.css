@@ -1,0 +1,157 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+:root {
+--primary-color: #ff7613;
+--text-color: #ffffff;
+}
+html {
+font-size: 10px;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: black;
+color: white;
+}
+img {
+width: 100%;
+}
+a {
+text-decoration: none;
+color: white;
+}
+.descripcion {
+margin-top: 8px;
+font-size: 12px;
+font-weight: 400;
+color: var(--text-color);
+}
+.titulo {
+color: var(--primary-color);
+font-weight: 700;
+font-size: 16px;
+}
+.item_preTitle {
+font-size: 11px;
+color: var(--text-color);
+font-weight: 300;
+}
+.tituloh4 {
+font-size: 13px;
+color: white;
+font-weight: 500;
+margin: 7px 0px;
+}
+.item_subtitle {
+font-size: 11px;
+color: var(--text-color);
+font-weight: 400;
+}
+
+
+.centro {
+max-width: 1000px;
+width: 90%;
+margin: 0 auto;
+display: grid;
+padding: 5rem;
+background: #070707;
+grid-template-columns: 1fr 1fr;
+gap: 32px;
+}
+@media only screen and (max-width: 768px) {
+	.centro {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 24px;
+		gap: 56px;
+	}
+}
+.cv {
+grid-column: 1 / -1;
+margin-bottom: 16px;
+}
+.group-1,
+.group-2 {
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+.group-3 {
+max-width: 700px;
+width: 100%;
+margin: 0 auto;
+grid-column: 1/-1;
+display: flex;
+flex-direction: row;
+gap: 40px;
+}
+.group-3 > div {
+	flex: 1;
+}
+@media only screen and (max-width: 768px) {
+	.cv {
+		margin-bottom: 0;
+	}
+	.group-3 {
+		flex-direction: column;
+	}
+}
+.container {
+display: flex;
+gap: 16px;
+}
+.foto {
+max-width: 250px;
+}
+.nombre_texto {
+color: var(--primary-color);
+font-weight: 700;
+font-size: clamp(20px, 50px, 56px);
+text-transform: uppercase;
+display: block;
+}
+.encabezado {
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+	}
+}
+.habilidades {
+margin-top: 8px;
+margin-left: 16px;
+line-height: 2;
+font-size: 10px;
+}
+.edu_item {
+margin-top: 16px;
+}
+.certificacion_item {
+margin-top: 16px;
+}
+.exp_item {
+margin-top: 16px;
+}
+.enlaceformu {
+color:#ff7613;
+}
+hr {
+	grid-column: 1/-1;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 8px;
+	border: none;
+	border-top: 4px solid rgba(128, 128, 128, 0.229);
+}
+@media only screen and (max-width: 768px) {
+	hr {
+		margin: 0 auto;
+	}
+}

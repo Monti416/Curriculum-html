@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Contacto</title>
+<link rel="stylesheet" href="formu.css">
+</head>
+<body class="formu">
+
+<div id="formulario-container">
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" required>
+
+<label for="apellido">Apellido:</label>
+<input type="text" id="apellido" name="apellido" required>
+
+<label for="correo">Correo Electrónico:</label>
+<input type="email" id="correo" name="correo" required>
+
+<label for="mensaje">Mensaje:</label>
+<textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+<button onclick="enviarFormulario()">Enviar</button>
+<button id="limpiar" onclick="limpiarFormulario()">Limpiar</button>
+<a href="index.html" class="boton-volver">Volver</a>
+</div>
+
+<script>
+function enviarFormulario() {
+var nombre = document.getElementById('nombre').value;
+var apellido = document.getElementById('apellido').value;
+var correo = document.getElementById('correo').value;
+var mensaje = document.getElementById('mensaje').value;
+var mensajePopup = `Formulario enviado\n\nNombre: ${nombre}\nApellido: ${apellido}\nCorreo: ${correo}\nMensaje: ${mensaje}`;
+alert(mensajePopup);
+limpiarFormulario();
+}
+function limpiarFormulario() {
+document.getElementById('nombre').value = '';
+document.getElementById('apellido').value = '';
+document.getElementById('correo').value = '';
+document.getElementById('mensaje').value = '';
+}
+</script>
+
+</body>
+</html>
